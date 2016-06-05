@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass'
 gem 'thin'
 gem 'mongoid'
-gem 'mongoid_search', github: 'mauriciozaffari/mongoid_search'
+gem 'mongoid_search', git: 'https://github.com/mauriciozaffari/mongoid_search.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
