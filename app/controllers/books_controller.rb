@@ -8,7 +8,7 @@ class BooksController < ApplicationController
   end
   
   def search
-    @books = Book.full_text_search(params[:id])
+    @books = Book.full_text_search(params[:search])
   end
 
   # GET /books/1

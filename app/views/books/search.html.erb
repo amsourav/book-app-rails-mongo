@@ -1,4 +1,15 @@
-<h2> Search records for <%= params[:id] %> </h2>
+<div class="row">
+  <div class="col-md-offset-3 col-md-6">
+  <%= form_tag search_books_path, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
+  <% end %>
+</div>
+</div>
+
+<h2> Search records for <%= params[:search] %> </h2>
 <table class="table table-striped">
   <thead>
     <tr>
